@@ -1,0 +1,16 @@
+.vscode
+**/*.pyc
+**/__pycache__
+beam
+mark
+data/train
+data/val
+data/tl_train
+data/tl_val
+models/*.pth
+.python-version
+beam_search.py
+*.bak
+show_val_result.py
+
+!models/crnn_best.pth
