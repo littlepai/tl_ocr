@@ -2,7 +2,9 @@
 [TensorFlow版本](https://github.com/littlepai/Unofficial-Zhihu-API)
 
 ## 获取代码
-git clone 
+```
+git clone git@github.com:littlepai/tl_ocr.git
+```
 
 ## 思路步骤
 1. 用软件生成接近知乎验证码的图片，20万到50万（下面简称 仿真验证码）
@@ -14,9 +16,12 @@ git clone
 由于Pytorch没有提供高效的解码方式，自己写的或者其他作者写的 Beam search 解码起来太慢了，所以案例使用贪心算法做解码，**不过没关系**，因为训练和解码是两条独立的线，训练照样用CTC Loss当损失函数，哪天不想用贪心算法做解码了，可以不用重新训练，直接把解码算法换成别的，都是可以的，记住，这两条线是独立的哦
 
 ### 操作步骤
-1. sh run.sh # 时间长短得看有无GPU，性能如何
-2. sh run_tl.sh # 第一个训练结束之后，这个是迁移学习，比较快
-
+```
+sh run.sh       # 时间长短得看有无GPU，性能如何
+sh run_tl.sh    # 第一个训练结束之后，这个是迁移学习，比较快
+```
 
 ### 测试
+```
 python predict.py
+```
