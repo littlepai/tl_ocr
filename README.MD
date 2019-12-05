@@ -5,6 +5,8 @@
 ```
 git clone git@github.com:littlepai/tl_ocr.git
 ```
+## 安装依赖
+pip install -r requirement.txt
 
 ## 思路步骤
 1. 用软件生成接近知乎验证码的图片，20万到50万（下面简称 仿真验证码）
